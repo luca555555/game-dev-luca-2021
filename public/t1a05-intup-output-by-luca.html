@@ -8,8 +8,6 @@
 
 </pre>
 
-<input id="mynum02" value="1000"
-
 <input id="mynum01" type=number value="4" >
 
 <input type="button" value="square" onclick="{
@@ -19,7 +17,9 @@
 					     }">
 
 <input type="button" value="jump to 1000" onclick="{
-						   document.getElementById('munum01').innerHTML = 'mynum02'
-						   }">
+					     let myIn02 = document.getElementById('mynum01').value
+					     document.getElementById('mydiv01').innerHTML = 
+					     myIn02 + ' squared = ' + myIn02*myIn02
+					     }">
 
 <div id="mydiv01">...</div>
