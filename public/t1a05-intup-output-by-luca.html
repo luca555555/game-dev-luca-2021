@@ -32,17 +32,31 @@
 
 
 <input type=button value="new" onclick="{
-					document.getElementById('mydiv02').innerHTML = 'Not sure if this counts as input/output'
-					document.getElementById('mydiv03').innerHTML = 'I supose that a click could count as input'
+					document.getElementById('mydiv02').innerHTML = 'something interesting will soon be here'
+					document.getElementById('mydiv03').innerHTML = '(also here)'
 					}"><br>
 <div id="mydiv02"> </div><br>
 		 <div id="mydiv03"> </div>
 
 <input type=hidden value=""><br>
 
-<input type=button value="otherthing" onclick="{
-					       alert('good morning')
-					       }"><br>
+
+
+
+<b id="workplz" style="color:#00ff00; background-Color:blue; ">I am bread</b>
+
+<input type=button value=Change onclick="{
+document.getElementById('workplz').style.color = 'red'
+document.getElementById('workplz').style.backgroundColor = 'yellow'
+                                         }">
+
+<input type=button value="Change back" onclick="{
+document.getElementById('workplz').style.color = '#00ff00'
+document.getElementById('workplz').style.backgroundColor = 'blue'
+                                         }"><br>
+
+
+
 
 <input type=hidden value=""><br>
 <input type=hidden value=""><br>
