@@ -31,16 +31,21 @@
 <b id=mm>mm</b><br>
 
 
-<input type=button value="new" onclick="{
-					document.getElementById('mydiv02').innerHTML = 'something interesting will soon be here'
-					document.getElementById('mydiv03').innerHTML = '(also here)'
+<input type=button value="change document title" onclick="{
+					     let myIn01 = document.getElementById('mynum01').value
+					     document.getElementById('mydiv01').innerHTML = 
+					     myIn01 + ' squared = ' + myIn01*myIn01
 					}"><br>
+
+<input type=text id="tchange" value="ggg">
+
+
 <div id="mydiv02"> </div><br>
 		 <div id="mydiv03"> </div>
 
 <input type=hidden value=""><br>
 
-<b id=>text colors</b><br>
+<b id=>Text color</b><br>
 
 <input type=button value="red" onclick="{
 document.getElementById('mydiv01').style.color = 'red'
