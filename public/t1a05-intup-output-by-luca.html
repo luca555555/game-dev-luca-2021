@@ -31,7 +31,10 @@
 <input type=text id="tchange" value="Title...">
 
 
-
+<input type=button value="change" onclick="{
+					     let myIn02 = document.getElementById('tchange').value
+					     document.getElementById('title').innerHTML = myIn02
+					}"><br>
 
 <input type=hidden value=""><br>
 
@@ -39,32 +42,12 @@
 
 <input type=button value="red" onclick="{
 document.getElementById('mydiv01').style.color = 'red'
-						 document.getElementById('mydiv02').style.color = 'red'
-						 document.getElementById('mydiv03').style.color = 'red'
-						 document.getElementById('ver').style.color = 'red'
-						      document.getElementById('title').style.color = 'red'
-						      document.getElementById('math').style.color = 'red'
-						      document.getElementById('mm').style.color = 'red'
                                          }">
 
 <input type=button value="green" onclick="{
-					  						 document.getElementById('mydiv02').style.color = '#00ff00'
-						 document.getElementById('mydiv03').style.color = '#00ff00'
-						 document.getElementById('ver').style.color = '#00ff00'
-						      document.getElementById('title').style.color = '#00ff00'
-						      document.getElementById('math').style.color = '#00ff00'
-						      document.getElementById('mm').style.color = '#00ff00'
-					  document.getElementById('mydiv01').style.color = '#00ff00'
                                          }">
 
 <input type=button value="blue" onclick="{
-						 document.getElementById('mydiv02').style.color = '0000ff'
-						 document.getElementById('mydiv03').style.color = '0000ff'
-						 document.getElementById('ver').style.color = '0000ff'
-						      document.getElementById('title').style.color = '0000ff'
-						      document.getElementById('math').style.color = '0000ff'
-						      document.getElementById('mm').style.color = '0000ff'
-					 document.getElementById('mydiv01').style.color = '#0000ff'
                                          }"><br>
 
 
