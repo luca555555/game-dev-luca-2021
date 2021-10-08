@@ -4,8 +4,9 @@
 
 <input id="myText01" type=text value="hello"><br>
 
-<input type=button value="change" onclick"{
-                                       document.getElementById('mydiv01').innerHTML = document.getElementById('myText01').value
-                                       }"><br>
+<input type=button value="change" onclick="{
+					     let myIn01 = document.getElementById('mtText01').value
+					     document.getElementById('mydiv01').innerHTML = myIn01
+					}"><br>
 
 <div id="mydiv01">...</div>
