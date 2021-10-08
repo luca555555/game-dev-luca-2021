@@ -6,9 +6,25 @@
 
 <input type=button value="changeplz" onclick="{
 					      document.getElementById('mydiv01').innerHTML = document.getElementById('mytext01').value
-					      }">
-
-
-
-
+					      }"><br>
 <div id=mydiv01>...</div>
+
+<pre>
+document.getElementById('mydiv01').innerHTML = document.getElementById('mytext01').value
+</pre>
+
+
+<input type=text id=mytext02 value="snap">
+
+<input type=button value="change" onclick="{
+					     let myIn01 = document.getElementById('mydiv02').value
+					     document.getElementById('mytext02').innerHTML = myIn01
+					}"><br>
+
+<div id=mydiv02>...</div>
+
+<pre>
+
+let myIn01 = document.getElementById('mydiv02').value
+document.getElementById('mytext02').innerHTML = myIn01
+</pre>
