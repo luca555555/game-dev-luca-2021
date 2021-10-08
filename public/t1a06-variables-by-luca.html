@@ -13,18 +13,21 @@
 document.getElementById('mydiv01').innerHTML = document.getElementById('mytext01').value
 </pre>
 
+<input type=hidden value="dd">
+<input type=hidden value="dd">
+<input type=hidden value="dd">
+
 
 <input type=text id=mytext02 value="snap">
 
 <input type=button value="change" onclick="{
-					     let myIn01 = document.getElementById('mydiv02').value
-					     document.getElementById('mytext02').innerHTML = myIn01
+					     let myIn01 = document.getElementById('mytext02').value
+					     document.getElementById('mydiv02').innerHTML = myIn01
 					}"><br>
 
 <div id=mydiv02>...</div>
 
 <pre>
-
-let myIn01 = document.getElementById('mydiv02').value
-document.getElementById('mytext02').innerHTML = myIn01
+let myIn01 = document.getElementById('mytext02').value
+document.getElementById('mydiv02').innerHTML = myIn01
 </pre>
