@@ -5,17 +5,17 @@
 
 <input type=hidden value="!=not &&=and ||=or">
 
-<input type=number value=5 id="myNumber01">
+<input type=number value=5 id="myNumber01"><br>
 
 <input type=button value=pp onclick="{
                                      let myIn01 = parseFloat(document.getElementById('myNumber01').value)
                                      if (myIn01 >=3){
                                      document.getElementById('mydiv01').innerHTML = myIn01+ ' is greater than 3'
-                                     }
+                                     }<br>
 }"><br>
   
 
 
 
 
-<div id="mydiv01">...</div>
+<div id="mydiv01">this should not say what its saying right now</div>
