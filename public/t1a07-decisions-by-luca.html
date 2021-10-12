@@ -14,8 +14,17 @@
                                      document.getElementById('mydiv01').innerHTML = myIn01 + ' is greater than 3'
                                      } else {
                                          document.getElementById('mydiv01').innerHTML = myIn01 + ' is less than 3'}
-}">
+}"><br>
+  <input type=hidden value="!=not &&=and ||=or"><br>
+  <input type=hidden value="!=not &&=and ||=or"><br>
   
+  <input type=button value=button onclick="{
+                                     let myIn01 = parseFloat(document.getElementById('myNum01').value)
+                                     if (myIn01 >= 3){
+                                     document.getElementById('mydiv01').innerHTML = myIn01 + ' is greater than 3'
+                                     } else {
+                                         document.getElementById('mydiv01').innerHTML = myIn01 + ' is less than 3'}
+}">
 
 
 
