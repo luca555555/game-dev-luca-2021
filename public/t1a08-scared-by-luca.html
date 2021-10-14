@@ -1,3 +1,25 @@
 <h4>version</h4>
 
-<h2 align=center>t1a08-scared-by-luca.html</h2>
+<h2 align=center>t1a08-loops-by-luca.html</h2>
+
+<a href="">sippity snap java reference for loops</a><br>
+
+<input type=number id="myNum01" value="4" ><br>
+
+<input type=button value="basic loop" onclick="{
+                                               document.getElementById('mydiv01').innerHTML = ''
+                                               let my temp = ''
+                                               
+                                               let myMax = parseInt(document.getElementById('myNum01').value)
+                                               
+                                               for (let myLoop = 0; myLoop <myMax; myLoop++ ){
+                                               if (myLoop * 2 > myMax){
+                                               document.getElementById('mydiv01').innerHTML += ' cool '
+                                               }
+                                               
+                                               mytemp += 'Loop number: ' +myLoop + '<br>'
+                                               }
+                                               document.getElementById('mydiv01').innerHTML = myTemp
+                                               }">
+
+<div id=mydiv01>...</div>
