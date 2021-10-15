@@ -70,17 +70,17 @@ document.getElementById('mydiv01').style.color = 'green'
 <input type=hidden value="6"><br>
 
 
-<input id="myNum02" type=number value="4">
+<input id="myNum02" type=number value="0">
 
 <input type=button value="AG" onclick="{
                                      let myIn02 = parseFloat(document.getElementById('myNum02').value)
-                                     if (myIn02 >= 50){
-                                     document.getElementById('mydiv02').innerHTML = myIn02 + ' is greater than 50'
+                                     if (myIn02 >= 20){
+                                     document.getElementById('mydiv02').innerHTML = myIn02 + ' high'
                                      } else {
-                                         document.getElementById('mydiv02').innerHTML = myIn02 + ' is less than 50'}
+                                         document.getElementById('mydiv02').innerHTML = myIn02 + ' low '}
 }"><br>
 
-<div id="mydiv02">...</div>
+<div id="mydiv02">must be at least 20</div>
 
 
 <input type=button value="Rando T" onclick="{
