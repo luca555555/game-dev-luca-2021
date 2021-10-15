@@ -11,12 +11,16 @@
   thingm:<input type=checkbox><br>
   things:<input type=checkbox><br>
   
+  <br>
+  
   Prefered number<br>
   107.7 <input type=radio name="myRad01" value="ih"><br>
   83.5 <input type=radio name="myRad01" value="hi"><br>
   66.9 <input type=radio name="myRad01" value="hi"><br>
   54.77 <input type=radio name="myRad01" value="hi"><br>
   176.88 <input type=radio name="myRad01" value="hi"><br>
+  
+  <br>
   
   Select one<br>
     <select id="myselect01" size=3>
@@ -36,20 +40,19 @@
   <input type=hidden value="this is a hidden message"><br>
   
   Give us a random file<input type=file><br>
-  
+  <br>
   Reset the form<input type= reset><br>
   
 
   
-<input type=button value=The bad button onclick="{
+<input type=button value="The bad button" onclick="{
     document.getElementById('myArea01').innerHTML = 'it took me 45m to figgure this out :('
     }">
   
-  textarea:<br>
-  <textarea id="myArea01" cols=60 rows=5 >other test goes here</textarea><br>
+<textarea id="myArea01" cols=60 rows=5 >Extra feedback</textarea><br>
   
     Submit this form<input type=button value=submit onclick"{
-    document.getElementById('myArea01').innerHTML = ('Thank you')
+    document.getElementById('myArea01').innerHTML = 'Thank you'
     }">
 
   </form>
