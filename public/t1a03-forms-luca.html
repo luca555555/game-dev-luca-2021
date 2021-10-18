@@ -60,8 +60,9 @@ Clear feedback box<input type=button value="clear" onclick="{
   <br>
   
 <textarea id="myArea01" cols=60 rows=5 >Extra feedback</textarea><br>
-
-  <br>
+  
+<input type=hidden value="if for some reason you are looking for the age requirements its 18"><br>
+  
   
 Tell us your age<br>
 <input type=number id="myNum01" value="0"<br>
@@ -69,14 +70,15 @@ Tell us your age<br>
 Submit this form<input type=button value=button onclick="{
                                      let myIn01 = parseFloat(document.getElementById('myNum01').value)
                                      if (myIn01 >= 18){
-                                     document.getElementById('mydiv01').innerHTML = ' thank you'
+                                     document.getElementById('mydiv01').innerHTML = 'thank you'
                                      } else {
-                                         document.getElementById('mydiv01').innerHTML = ' age requirement not met'}
+                                         document.getElementById('mydiv01').innerHTML = 'age requirement not met'}
 }"><br>
 
-  <br>
+<br>
   
-  <div id="mydiv01">...</div>
+  
+<div id="mydiv01"> </div>
   </form>
 
 <a href="https://luca555555.github.io/game-dev-luca-2021/public/index.html">back to index</a><br>
