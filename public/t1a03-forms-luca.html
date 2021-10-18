@@ -52,19 +52,26 @@
   Reset the form<input type= reset><br>
 
 <br>
-<br>
 
-The bad<input type=button value="button" onclick="{
-    document.getElementById('myArea01').innerHTML = 'it took me 45m to figgure this out :('
+Clear feedback box<input type=button value="clear" onclick="{
+    document.getElementById('myArea01').innerHTML = ' '
     }"><br>
   
   <br>
   
 <textarea id="myArea01" cols=60 rows=5 >Extra feedback</textarea><br>
+
   
-    Submit this form<input type=button value=submit onclick"{
-    document.getElementById('myArea01').innerHTML = 'Thank you'
-    }">
+Tell us your age
+<input type=number id="myNum01" value="ss"<br>
+  
+Submit this form<input type=button value=button onclick="{
+                                     let myIn01 = parseFloat(document.getElementById('myNum01').value)
+                                     if (myIn01 >= 50){
+                                     document.getElementById('mydiv01').innerHTML = myIn01 + ' is greater than 50'
+                                     } else {
+                                         document.getElementById('mydiv01').innerHTML = myIn01 + ' is less than 50'}
+}"><br>
 
   </form>
 
