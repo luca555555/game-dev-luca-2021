@@ -64,16 +64,18 @@ Clear feedback box<input type=button value="clear" onclick="{
   <br>
   
 Tell us your age<br>
-<input type=number id="myNum01" value="ss"<br>
-  
+<input type=number id="myNum01" value="0"<br>
+  <br>
 Submit this form<input type=button value=button onclick="{
                                      let myIn01 = parseFloat(document.getElementById('myNum01').value)
-                                     if (myIn01 >= 50){
-                                     document.getElementById('mydiv01').innerHTML = myIn01 + ' is greater than 50'
+                                     if (myIn01 >= 18){
+                                     document.getElementById('mydiv01').innerHTML = myIn01 + ' thank you'
                                      } else {
-                                         document.getElementById('mydiv01').innerHTML = myIn01 + ' is less than 50'}
+                                         document.getElementById('mydiv01').innerHTML = myIn01 + ' age requirement not met'}
 }"><br>
 
+  <br>
+  
   <div id="mydiv01">...</div>
   </form>
 
