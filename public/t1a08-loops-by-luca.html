@@ -36,4 +36,19 @@
                                           document.getElementById('mydiv01').innerHTML = myTemp
                                           }">
 
+<input type=button value="Loop dis" onclick="{
+                                          document.getElementById('myNum01').innerHTML = ''
+                                          let myTemp = ''
+                                          
+                                          let myMax = parseInt(document.getElementById('myNum01').value)
+                                          
+                                          for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+                                          if (myLoop % 2 ==1){
+                                             myTemp += ' <font color=red> odd </font>'
+                                          }
+                                          myTemp += 'Loop ' +myLoop + '<br>'
+                                          }
+                                          document.getElementById('mydiv01').innerHTML = myTemp
+                                          }">
+
 <div id="mydiv01"> </div>
