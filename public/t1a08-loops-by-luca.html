@@ -6,14 +6,16 @@
 
 <input id=myNum01 type=number value="4" >
 
-<input type=button value="basic loop gen" onclick="{
+<input type=button value="50% cool loops" onclick="{
                                           document.getElementById('myNum01').innerHTML = ''
                                           let myTemp = ''
                                           
                                           let myMax = parseInt(document.getElementById('myNum01').value)
                                           
                                           for (let myLoop = 0; myLoop < myMax; myLoop++ ){
-                                          if (myLoop * 2 > myMax)
+                                          if (myLoop * 2 > myMax){
+                                          document.getElementById('mydiv01').innerHTML += ' cool '
+                                          }
                                           myTemp += 'Loop ' +myLoop + '<br>'
                                           }
                                           document.getElementById('mydiv01').innerHTML = myTemp
