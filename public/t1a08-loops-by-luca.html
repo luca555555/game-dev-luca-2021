@@ -6,7 +6,7 @@
 
 <input id=myNum01 type=number value="4" >
 
-<input type=button value="Loop" onclick="{
+<input type=button value="Loop dis" onclick="{
                                           document.getElementById('myNum01').innerHTML = ''
                                           let myTemp = ''
                                           
@@ -15,6 +15,21 @@
                                           for (let myLoop = 0; myLoop < myMax; myLoop++ ){
                                           if (myLoop * 2 > myMax){
                                           myTemp += ' cool '
+                                          }
+                                          myTemp += 'Loop ' +myLoop + '<br>'
+                                          }
+                                          document.getElementById('mydiv01').innerHTML = myTemp
+                                          }">
+
+<input type=button value="Loopy" onclick="{
+                                          document.getElementById('myNum01').innerHTML = ''
+                                          let myTemp = ''
+                                          
+                                          let myMax = parseInt(document.getElementById('myNum01').value)
+                                          
+                                          for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+                                          if (myLoop % 2 == 0){
+                                          myTemp += ' yelloe '
                                           }
                                           myTemp += 'Loop ' +myLoop + '<br>'
                                           }
