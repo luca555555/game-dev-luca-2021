@@ -51,23 +51,21 @@
                                           document.getElementById('mydiv01').innerHTML = myTemp
                                           }">
 
-<input type=button value="hhhhhh" onclick="{
+
+<input type=button value="even loops" onclick="{
                                           document.getElementById('myNum01').innerHTML = ''
                                           let myTemp = ''
                                           
                                           let myMax = parseInt(document.getElementById('myNum01').value)
                                           
                                           for (let myLoop = 0; myLoop < myMax; myLoop++ ){
-                                          if (myLoop % 2 == 0){
-                                               myTemp += ' <font color=blue> even </font> '
+                                          if (myLoop % 1 == 0){
+                                               myTemp += ' <font color=red> odd </font> '
                                           }
                                           myTemp += ' loop ' +myLoop + '<br>'
                                           }
                                           document.getElementById('mydiv01').innerHTML = myTemp
-                                               } else {
-                                               myTemp = ('baggle')
-                                               }
-                                           }">
+                                          }">
 
 
                                         
