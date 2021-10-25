@@ -20,8 +20,8 @@
 
 <div id="mydiv01">...</div>
   
-<input type=hidden value=ddd><br>
-  <input type=hidden value=ddd><br>
+<br>
+<br>
   
 <b>50 dosnt work here</b><br>
   
@@ -37,17 +37,17 @@
 }"><br>
 
 <div id="mydiv02">...</div><br>
+  
 
 
-<input type=number value=55 id="myNum03>
+<input type=number value=0 id="myNum03">
 
 <input type=button value=button onclick="{
-                                     let myIn03= parseFloat(document.getElementById('myNum03).value)
-                                     if (myIn03>= 50){
-                                     document.getElementById('mydiv03).innerHTML = myIn03+ ' if state'
+                                     let myIn03 = parseFloat(document.getElementById('myNum03').value)
+                                     if (myIn03 >= 50){
+                                     document.getElementById('mydiv03').innerHTML = myIn03 + ' 1 '
                                      } else {
-                                         document.getElementById('mydiv03).innerHTML = myIn03+ 'else state'
-                                                                                                           }
+                                         document.getElementById('mydiv03').innerHTML = myIn03 + ' 2 '}
 }"><br>
 
-<div id="mydiv03>...</div>
+<div id="mydiv03">...</div>
