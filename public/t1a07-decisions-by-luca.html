@@ -44,10 +44,10 @@
 
 <input type=button value=button onclick="{
                                      let myIn03 = parseFloat(document.getElementById('myNum03').value)
-                                     if (myIn03 >= 50){
-                                     document.getElementById('mydiv03').innerHTML = myIn03 + ' 1 '
+                                     if (myIn03 >= 50 && myIn03<=60){
+                                     document.getElementById('mydiv03').innerHTML = myIn03 + ' if state '
                                      } else {
-                                         document.getElementById('mydiv03').innerHTML = myIn03 + ' 2 '}
+                                         document.getElementById('mydiv03').innerHTML = myIn03 + ' else state '}
 }"><br>
 
 <div id="mydiv03">...</div>
