@@ -40,14 +40,15 @@
   
 
 
+Range (50-60)
 <input type=number value=0 id="myNum03">
 
 <input type=button value=button onclick="{
                                      let myIn03 = parseFloat(document.getElementById('myNum03').value)
                                      if (myIn03 >= 50 && myIn03<=60){
-                                     document.getElementById('mydiv03').innerHTML = myIn03 + ' if state '
+                                     document.getElementById('mydiv03').innerHTML = myIn03 + ' is in range '
                                      } else {
-                                         document.getElementById('mydiv03').innerHTML = myIn03 + ' else state '}
+                                         document.getElementById('mydiv03').innerHTML = myIn03 + ' is out of range '}
 }"><br>
 
 <div id="mydiv03">...</div>
