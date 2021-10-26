@@ -3,10 +3,20 @@
 
 <a href "site">link to add lol</a><br>
 
-<input type=text id=myText01 value="3"><br>
+<input type=text id=myText01 value="3">
 
 <input type=button value="good" onclick="{
                                               document.getElementById('mydiv01').innerHTML =
                                               document.getElementById('myText01').value
-                                              }"> 
+                                              }"><br>
 <div id="mydiv01">...</div>
+
+<br>
+<br>
+<br>
+
+<b id="myB01" onMouseOut="{
+                          document.getElementById('myB01').innerHTML = 'bold this is'
+                          }" onMouseOver="{
+                                          document.getElementById('mydiv01').innerHTML = 'this be not bold'
+                                          }">this lol</b>
