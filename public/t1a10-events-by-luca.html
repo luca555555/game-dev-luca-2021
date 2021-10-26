@@ -5,6 +5,12 @@
 
 <br>
 
+<style>
+body { 
+  background: #9FB1FF url()
+}
+</style>
+
 <input type=text id=myText01 value="bread">
 
 <input type=button value="good" onclick="{
@@ -18,7 +24,7 @@
 <br>
 
 <b id="myB01" onMouseOut="{
-                          document.getElementById('myB01').innerHTML = 'this text is sad'
+                          document.getElementById('myB01').innerHTML = 'this text is <font color=blue> sad </font>'
                           }" onMouseOver="{
-                                          document.getElementById('myB01').innerHTML = 'this text is <font color=red> happy </font>'
+                                          document.getElementById('myB01').innerHTML = 'this text is <font color=yellow> happy </font>'
                                           }">this text is sad</b>
