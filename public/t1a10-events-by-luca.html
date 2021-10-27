@@ -35,6 +35,12 @@ body {
 
 <input type=text id=myText03 value="sqw">
 
+<input type=button value="onKeyPress" onKeyPress="{
+                                              document.getElementById('mydiv03').innerHTML =
+                                              document.getElementById('myText03').value
+                                              }"><br>
+
+
 <input type=button value="onKeyDown" onKeyDown="{
                                               document.getElementById('mydiv03').innerHTML =
                                               document.getElementById('myText03').value
