@@ -1,28 +1,26 @@
 <h4>version 0.0.2</h4>
 <h2 align=center>t2a02-objects-by-luca.html</h3>
 
-<input type=text id="myText01" value="useless text box?">
-
-<input type=button value="test" onClick="{
+<input type=button value="show objects" onClick="{
                                        
                                        let myPerson = {
-                                       'firstname' : 'FN',
-                                       'lastname' : 'LN',
+                                       'firstname' : 'jhon',
+                                       'lastname' : 'deer',
                                        'age' : 50,
                                        'eyecolor' : 'blue'
                                        }
                                        
-                                       document.getElementById('mydiv01').innerHTML = '<br> myPerson has objects<br>'
+                                       document.getElementById('mydiv01').innerHTML = '<br>object of myPerson<br>'
                                          document.getElementById('mydiv01').innerHTML += 'firstname: ' +
                                          myPerson.firstname + '<br>'
                                          document.getElementById('mydiv01').innerHTML += ' lastname: ' +
                                          myPerson.lastname + '<br>'
-                                         document.getElementById('mydiv01').innerHTML += ' age ' +
+                                         document.getElementById('mydiv01').innerHTML += ' age: ' +
                                          myPerson.age + '<br>'
-                                         document.getElementById('mydiv01').innerHTML += ' eyecolor ' +
+                                         document.getElementById('mydiv01').innerHTML += ' eyecolor: ' +
                                          myPerson.eyecolor + '<br>'
                                          
                                        }">
-<div id="mydiv01">...</div>
+<div id="mydiv01">myPerson</div>
 
 <br>
