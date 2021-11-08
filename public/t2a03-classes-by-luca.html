@@ -6,19 +6,18 @@
 <br>
 <br>
 
-<input type=button value="test" onclick="{
+<input type=button value="test" onClick="{
                                          class myAnimal {
                                          constructor(passName,passAge) {
                                          this.myName = passName;
                                          this.myAge = passAge;
                                          }
                                          myShow(){
-                                         document,getElementById('myDiv01'),innerHTML = 'hello' + this.myName + '. you are ' +this.myAge + ' years old <br>'
+                                         document.getElementById('myDiv01').innerHTML = 'hello '+ this.myName + '.you are ' +this.myAge + 'yars old<br>'
                                          }
-                                         } //end class myAnimal
-                                         myDog = new myAnimal('thisisname', 5)
+                                         }// end class myAnimal
+                                         myDog = new myAnimal('snickers', 5)
                                          myDog.myShow()
-                                         
                                          }">
 
 <div id="myDiv01">...</div>
