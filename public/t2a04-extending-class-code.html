@@ -1,2 +1,33 @@
 <h2>v 0.0.1</h4>
 <h4 align=center>t2a04-extending-class-code.html</h4>
+
+
+<input type=button value="Send" onClick="{
+                                         class myAnimal {
+                                         constructor(passName,passAge) {
+                                         this.myName = passName;
+                                         this.myAge = passAge;
+                                         }
+                                         myShow(){
+                                         document.getElementById('myDiv01').innerHTML = 'Hi '+ this.myName + '. You are now ' +this.myAge + ' years old.<br>'
+                                         }
+                                         }// end class myAnimal
+                                         myTurtle = new myAnimal('snapers', 17)
+                                         myTurtle.myShow()
+                                         }">
+
+<input type=button value="test" onClick="{
+                                         
+                                         class myCat extends myAnimal {
+                                         myShow(){
+                                         document.getElementById('myDiv01').innerHTML = this.myName + ' is a great cat who is ' +this.myAge + 'years old<br>'
+                                         }
+                                         }//end extended class myCat
+                                         
+                                         myPet = new myCat('fluffy',77)
+                                         myPet.myShow()
+                                         
+                                         }">
+
+
+<div id="myDiv01"> </div>
