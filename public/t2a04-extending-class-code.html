@@ -1,4 +1,4 @@
-<h4>v 0.1.6</h4>
+<h4>v 0.1.7</h4>
 <h2 align=center>t2a04-extending-class-code.html</h2>
 
 
@@ -26,6 +26,20 @@
                                               
                                          myPet = new myCat('Fluffy', 71)
                                          myPet.myShow()
+                                         }">
+
+
+
+<input type=button value="extend class myAnimal" onClick="{
+                                         class myRab extends myAnimal {
+                                         myShow(){
+                                         document.getElementById('myDiv01').innerHTML = 'This is '+ this.myName + '. She is ' +this.myAge + ' years old. <br>'
+                                              }
+                                              }// end class myAnimal
+                                              
+                                              
+                                         myPat = new myRab('carrots', 53)
+                                         myPat.myShow()
                                          }">
 
 
