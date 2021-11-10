@@ -1,12 +1,13 @@
-<h4>v 0.1.8</h4>
+<h4>v 0.1.9</h4>
 <h2 align=center>t2a04-extending-class-code.html</h2>
 
 
 <script>
                                          class myAnimal {
-                                         constructor(passName,passAge) {
+                                         constructor(passName,passAge,passColor) {
                                          this.myName = passName;
                                          this.myAge = passAge;
+                                           this.myColor = passColor;
                                          }
                                          myShow(){
                                          document.getElementById('myDiv01')
@@ -31,12 +32,12 @@
 <input type=button value="extend class myAnimal with myRab" onClick="{
                                          class myRab extends myAnimal {
                                          myShow(){
-                                         document.getElementById('myDiv01').innerHTML = 'This is '+ this.myName + '. She is ' +this.myAge + ' years old. <br>'
+                                         document.getElementById('myDiv01').innerHTML = 'This is '+ this.myName + '. She is ' +this.myAge + ' years old and is the color ' + this.myColor + '.'
                                               }
                                               }// end class myAnimal
                                               
                                               
-                                         myPat = new myRab('carrots', 53)
+                                         myPat = new myRab('carrots', 53 ,'blue')
                                          myPat.myShow()
                                          }">
 
