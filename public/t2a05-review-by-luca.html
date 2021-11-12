@@ -14,7 +14,7 @@
 
 
 
-
+<h3>adding numbers</h3>
 
 <input type=hidden value="adding numbers">
 
@@ -31,14 +31,14 @@
    document.getElementById('myDiv124').innerHTML +=  'Numbers added using *1 trick ' +  my1 + ' + ' +  my2 + ' = ' +  (my1*1 + my2*1)  + '<br>'                                                       
                                                              
                                                               
-}"><br><br>
+}"><br>
 
 <div id='myDiv124'>...</div><br>
 
 
 
 
-
+<h3>loops</h3>
 
 Loop this many times <input type="number" id="myTextLoop" value="10" size="10"> 
     
@@ -52,7 +52,7 @@ Loop this many times <input type="number" id="myTextLoop" value="10" size="10">
                                                                
     }
                                                                
-}"><br><br>
+}"><br>
 
 <div id='myDiv125'>...</div><br>
 
@@ -60,7 +60,7 @@ Loop this many times <input type="number" id="myTextLoop" value="10" size="10">
 
 
 
- 
+ <h3>if statments</h3>
 
 Change the number <input type="number" id="myTextIf" value="4" size="10">     
     
@@ -110,7 +110,7 @@ Change the number <input type="number" id="myTextIf" value="4" size="10">
 
                                                                     
                                                                    
-}"><br><br>
+}"><br>
 
 <div id='myDiv126'>...</div><br>
 
@@ -121,7 +121,7 @@ Change the number <input type="number" id="myTextIf" value="4" size="10">
 
 
 
- 
+ <h3>arrays</h3>
 
 
 Store these numbers in an array <input type="text" id="myTextArray" value="3, 7, 9" size="10">        
@@ -136,7 +136,7 @@ Store these numbers in an array <input type="text" id="myTextArray" value="3, 7,
       for (myIndex in myArray){                                                                                                                  
          document.getElementById('myDiv127').innerHTML +=     myIndex + ' stores : ' + myArray[myIndex] + '<br>'
       }                                                        
-}"><br><br>
+}"><br>
 
 <div id='myDiv127'>...</div><br>
 
@@ -147,7 +147,7 @@ Store these numbers in an array <input type="text" id="myTextArray" value="3, 7,
 
 
  
-    
+<h3>objects</h3>
     
 Store these Items in a Javascript object <br>
     <textarea id="myTextAreaObject" rows="8" cols="70" wrap="false">{
@@ -166,7 +166,7 @@ Store these Items in a Javascript object <br>
     document.getElementById('myDiv128').innerHTML = 'Name: ' + myPerson.firstName + ' '+ myPerson.lastName + ', Age: '  + myPerson.age  + ', EyeColor: ' + myPerson.eyeColor + '<br>'
                                                        
                                                               
-}"><br><br>
+}"><br>
 
 <div id='myDiv128'>...</div><br>
 
@@ -177,7 +177,7 @@ Store these Items in a Javascript object <br>
 
 
 
- 
+ <h3>functions</h3>
 
 <input id="myButton129" type="button" value="Make and use a function" onclick="{
 
@@ -188,7 +188,7 @@ function myFun(myVar){
 
 myFun('28')      // This activates the function                                                                
                                                                       
-}"><br><br>
+}"><br>
 
 <div id='myDiv129'>...</div><br>
 
@@ -197,7 +197,7 @@ myFun('28')      // This activates the function
 
 
 
-
+<h3>class</h3>
  
 
 <input id="myButton130" type="button" value="Make and Show the class myAnimal" onclick="{
@@ -218,7 +218,7 @@ myFun('28')      // This activates the function
                                                                                  
    myDog = new myAnimal('Snickers', 5)
    myDog.myShow()                                                       
-}"><br><br>
+}"><br>
 
 <div id='myDiv130'>...</div><br>
 
@@ -229,7 +229,7 @@ myFun('28')      // This activates the function
 
 
 
-
+<h3>extended class</h3>
  
 
 <input id="myButton131" type="button" value="Extend a class" onclick="{
@@ -253,6 +253,6 @@ class myCat extends myAnimal {
                                                                                                                                                                                                        
    myPet = new myCat('Fluffy', 14)
    myPet.myShow()                                                                           
-}"><br><br>
+}"><br>
 
 <div id='myDiv131'>...</div><br>
