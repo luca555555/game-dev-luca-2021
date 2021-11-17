@@ -34,9 +34,10 @@
                                             if (myString[myLoop] == 'v') {myTemp  = 'w'}
                                             if (myString[myLoop] == 'w') {myTemp  = 'x'}
                                             if (myString[myLoop] == 'x') {myTemp  = 'y'}
-                                            if (myString[myLoop] == 'y') {myTemp  = 'z'}
+                                            if (myString[myLoop] == 'y') {myTemp  = '.'}
                                             if (myString[myLoop] == 'z') {myTemp  = 'a'}
                                             if (myString[myLoop] == ' ') {myTemp  = 'k'}
+                                            if (myString[myLoop] == '.') {myTemp  = 'z'}
       myString[myLoop] = myTemp
    }
    document.getElementById('myArea02').value = myString.join('')
@@ -75,9 +76,10 @@
                                             if (myString[myLoop] == 'w') {myTemp  = 'v'}
                                             if (myString[myLoop] == 'x') {myTemp  = 'w'}
                                             if (myString[myLoop] == 'y') {myTemp  = 'x'}
-                                            if (myString[myLoop] == 'z') {myTemp  = 'y'}
+                                            if (myString[myLoop] == '.') {myTemp  = 'y'}
                                             if (myString[myLoop] == 'a') {myTemp  = 'z'}
                                             if (myString[myLoop] == 'k') {myTemp  = ' '}
+                                            if (myString[myLoop] == '.') {myTemp  = 'y'}
       myString[myLoop] = myTemp
    }
                                             document.getElementById('myArea03').value = myString.join('')
