@@ -1,8 +1,8 @@
-<h4>version 0.0.2<h4>
+<h4>version 0.0.3<h4>
 
 <h1 align=center>t2a06-spy-by-luca.html</h1>
 
-<textarea id="myArea01" rows=4 cols=70>Amazingly few discotheques provide jukeboxes.</textarea><br> 
+<textarea id="myArea01" rows=4 cols=70>amazingly few discotheques provide jukeboxes</textarea><br> 
 
 
 <input type=button value="encrypt" onclick="{
@@ -50,8 +50,32 @@
    myString = document.getElementById('myArea02').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
-      if (myString[myLoop] == 'f') {myTemp  = 'e'} 
-      if (myString[myLoop] == 'i') {myTemp  = 'h'} 
+                                            if (myString[myLoop] == 'b') {myTemp  = 'a'}
+                                            if (myString[myLoop] == 'c') {myTemp  = 'b'}
+                                            if (myString[myLoop] == 'd') {myTemp  = 'c'}
+                                            if (myString[myLoop] == 'e') {myTemp  = 'd'}
+                                            if (myString[myLoop] == 'f') {myTemp  = 'e'}
+                                            if (myString[myLoop] == 'g') {myTemp  = 'f'}
+                                            if (myString[myLoop] == 'h') {myTemp  = 'g'}
+                                            if (myString[myLoop] == 'i') {myTemp  = 'h'}
+                                            if (myString[myLoop] == 'j') {myTemp  = 'i'}
+                                            if (myString[myLoop] == 'k') {myTemp  = 'j'}
+                                            if (myString[myLoop] == 'l') {myTemp  = 'k'}
+                                            if (myString[myLoop] == 'm') {myTemp  = 'l'}
+                                            if (myString[myLoop] == 'n') {myTemp  = 'm'}
+                                            if (myString[myLoop] == 'o') {myTemp  = 'n'}
+                                            if (myString[myLoop] == 'p') {myTemp  = 'o'}
+                                            if (myString[myLoop] == 'q') {myTemp  = 'p'}
+                                            if (myString[myLoop] == 'r') {myTemp  = 'q'}
+                                            if (myString[myLoop] == 's') {myTemp  = 'r'}
+                                            if (myString[myLoop] == 't') {myTemp  = 's'}
+                                            if (myString[myLoop] == 'u') {myTemp  = 't'}
+                                            if (myString[myLoop] == 'v') {myTemp  = 'u'}
+                                            if (myString[myLoop] == 'w') {myTemp  = 'v'}
+                                            if (myString[myLoop] == 'x') {myTemp  = 'w'}
+                                            if (myString[myLoop] == 'y') {myTemp  = 'x'}
+                                            if (myString[myLoop] == 'z') {myTemp  = 'y'}
+                                            if (myString[myLoop] == 'a') {myTemp  = 'z'}
       myString[myLoop] = myTemp
    }
                                             document.getElementById('myArea03').value = myString.join('')
