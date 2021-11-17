@@ -1,4 +1,4 @@
-<h4>version 0.0.3<h4>
+<h4>version 0.0.4<h4>
 
 <h1 align=center>t2a06-spy-by-luca.html</h1>
 
@@ -36,6 +36,7 @@
                                             if (myString[myLoop] == 'x') {myTemp  = 'y'}
                                             if (myString[myLoop] == 'y') {myTemp  = 'z'}
                                             if (myString[myLoop] == 'z') {myTemp  = 'a'}
+                                            if (myString[myLoop] == ' ') {myTemp  = 'space'}
       myString[myLoop] = myTemp
    }
    document.getElementById('myArea02').value = myString.join('')
