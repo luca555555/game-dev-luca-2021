@@ -4,10 +4,10 @@
 
 <textarea id="myArea01" rows=4 cols=70>amazingly few discotheques provide jukeboxes.</textarea><br> 
    
-<input type=hidden value="">
+<input type=hidden value="do base 64">
 
    
-<input type=button value="encrypt" onclick="{
+<input type=button value="simple encrypt" onclick="{
    let myTemp = ''
    myString = document.getElementById('myArea01').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
@@ -49,7 +49,7 @@
 
 <textarea id="myArea02" rows=4 cols=70></textarea><br> 
 
-<input type=button value="decrypt" onclick="{
+<input type=button value="simple decrypt" onclick="{
    let myTemp = ''
    myString = document.getElementById('myArea02').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
