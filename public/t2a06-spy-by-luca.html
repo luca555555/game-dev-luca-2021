@@ -1,4 +1,4 @@
-<h4>version 0.1.1 <h4>
+<h4>version 0.1.2 <h4>
 
 <h1 align=center>t2a06-spy-by luca.html</h1>
 <textarea id="myArea01" rows=4 cols=70>The quick onyx goblin jumps over the lazy dwarf 792 times.</textarea><br> 
@@ -87,10 +87,20 @@
       myString[myLoop] = myTemp
    }
    document.getElementById('myArea02').value = myString.join('')
-}"><br><br>
+}">
+   
+   
 
+<input type=button value="encrypt base64" onclick="{
+                                                   let str = document.getElementById('myArea01').value
+                                                   let encodedStr = btoa(str)
+                                                   console.log(encodedStr)
+                                                   
+                                                   document.getElementById('myArea02').value = myString.join('')
+                                                   }"><br><br>
 
-
+   
+   
 <textarea id="myArea02" rows=4 cols=70></textarea><br> 
 
 <input type=button value="decrypt" onclick="{
