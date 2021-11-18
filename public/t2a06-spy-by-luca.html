@@ -1,4 +1,4 @@
-<h4>version 0.0.6<h4>
+<h4>version 0.0.7<h4>
 
 <h1 align=center>t2a06-spy-by luca.html</h1>
 <textarea id="myArea01" rows=4 cols=70>The quick onyx goblin jumps over the lazy dwarf 792 times</textarea><br> 
@@ -58,7 +58,7 @@
 
 <input type=button value="decrypt" onclick="{
    let myTemp = ''
-   myString = document.getElementById('myArea02').split('')
+   myString = document.getElementById('myArea02').value.split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
                                             if (myString[myLoop] == 'b') {myTemp  = 'a'}
