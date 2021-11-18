@@ -4,6 +4,16 @@
 <textarea id="myArea01" rows=4 cols=70>The quick onyx goblin jumps over the lazy dwarf 792 times.</textarea><br> 
 
 
+   
+<input type=button value="encrypt base64" onclick="{
+                                                   let str = document.getElementById('myArea01').value
+                                                   let encodedStr = btoa(str)
+                                                   console.log(encodedStr)
+                                                   
+                                                   document.getElementById('myArea02').value = str.join('')
+                                                   }">
+
+
 <input type=button value="encrypt" onclick="{
    let myTemp = ''
    myString = document.getElementById('myArea01').value.split('')
