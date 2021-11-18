@@ -1,4 +1,4 @@
-<h4>version 0.0.2<h4>
+<h4>version 0.0.3<h4>
 
 <h1 align=center>t2a06-spy-name.html</h1>
 <textarea id="myArea01" rows=4 cols=70>Hello how are you</textarea><br> 
@@ -31,10 +31,11 @@
                                             if (myString[myLoop] == 't') {myTemp  = 'u'}
                                             if (myString[myLoop] == 'u') {myTemp  = 'v'}
                                             if (myString[myLoop] == 'v') {myTemp  = 'w'}
-                                            if (myString[myLoop] == 'w') {myTemp  = 'x'}
+                                            if (myString[myLoop] == 'w') {myTemp  = ' '}
                                             if (myString[myLoop] == 'x') {myTemp  = 'y'}
                                             if (myString[myLoop] == 'y') {myTemp  = 'z'}
                                             if (myString[myLoop] == 'z') {myTemp  = 'a'}
+                                            if (myString[myLoop] == ' ') {myTemp  = 'x'}
       myString[myLoop] = myTemp
    }
    document.getElementById('myArea02').value = myString.join('')
@@ -71,10 +72,11 @@
                                             if (myString[myLoop] == 'u') {myTemp  = 't'}
                                             if (myString[myLoop] == 'v') {myTemp  = 'u'}
                                             if (myString[myLoop] == 'w') {myTemp  = 'v'}
-                                            if (myString[myLoop] == 'x') {myTemp  = 'w'}
+                                            if (myString[myLoop] == 'x') {myTemp  = ' '}
                                             if (myString[myLoop] == 'y') {myTemp  = 'x'}
                                             if (myString[myLoop] == 'z') {myTemp  = 'y'}
                                             if (myString[myLoop] == 'a') {myTemp  = 'z'}
+                                            if (myString[myLoop] == ' ') {myTemp  = 'w'}
       myString[myLoop] = myTemp
    }
    document.getElementById('myArea03').value = myString.join('')
