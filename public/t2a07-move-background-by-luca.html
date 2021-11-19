@@ -12,15 +12,15 @@
 
 <input id="myButton01" type=button value="background move left" onclick="{
   myTemp = '100px 0px'
-  myGlobalX += 5
+  myGlobalX -= 5
   myTemp =  myGlobalX + '0px px'
   document.getElementById('myBody').style.backgroundPosition =myTemp
 }">
    
 <input id="myButton01" type=button value="test" onclick="{
-  myTemp = '0px 100px'
-  myGlobalX -= 5
-  myTemp =  myGlobalX + 'px 0px'
+  myTemp = '100px px'
+  myGlobalX += 5
+  myTemp =  myGlobalX + '0px px'
   document.getElementById('myBody').style.backgroundPosition =myTemp
 }">
    
