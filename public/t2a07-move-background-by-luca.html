@@ -10,7 +10,7 @@
 </script>
 
 <h3>Background</h3>
-<input id="myButton01" type=button value="background move left" onclick="{
+<input id="myButton01" type=button value="Left" onclick="{
   myTemp = '100px 0px'
   myGlobalX -= 5
   myTemp =  myGlobalX + 'px 0px'
@@ -18,7 +18,7 @@
 }">
 
    
-   <input id="myButton01" type=button value="right" onclick="{
+   <input id="myButton02" type=button value="Right" onclick="{
   myTemp = '100px 0px'
   myGlobalX += 5
   myTemp =  myGlobalX + 'px 0px'
@@ -26,13 +26,23 @@
 }">
    
    
-<input type=button value="Auto Background Left" onclick="{
+<input type=button value="Auto left" onclick="{
   clearInterval(myClock)
   myClock = setInterval(function(){
      document.getElementById('myButton01').click() 
   }, 100)
     
-}">
+}"<br>
+   
+<input type=button value="Auto right" onclick="{
+  clearInterval(myClock)
+  myClock = setInterval(function(){
+     document.getElementById('myButton02').click() 
+  }, 100)
+    
+}"<br>
+   
+<h3>Image</h3>
 
 <input type=button value="Image Right" onclick="{
   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
@@ -40,4 +50,4 @@
 
 <img id="myImage01" style="position:relative; width:100px; height:80px; top:0px; left:0px;" src="https://th.bing.com/th/id/OIP.YhIX_JjpD1n65ZPSbt2j2wHaFj?w=239&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;pid=1.7.jpg">
 
-   'input type=hidden vbalue="piskel lunapic"
+ <input type=hidden value="piskel lunapic"
