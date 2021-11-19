@@ -40,6 +40,14 @@
      document.getElementById('myButton02').click() 
   }, 100)
     
+}"
+       
+<input type=button value="stop" onclick="{
+  clearInterval(myClock)
+  myClock = setInterval(function(){
+     document.getElementById('myButton02').click() 
+  }, 0)
+    
 }"<br>
    
 <h3>Image</h3>
