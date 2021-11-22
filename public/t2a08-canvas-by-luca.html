@@ -1,4 +1,4 @@
-<h4>version 0.0.2 </h4>
+<h4>version 0.0.3 </h4>
 
 <h2 align=center>t2a08-canvas-by-luca.html</h2>
 
@@ -38,13 +38,13 @@
 
 
 
-<input type=button value="createLinearGradient(100, 300, 200, 400)" onclick="{
-   let myGradient = myContext.createLinearGradient(100, 300, 200, 400);
-   myGradient.addColorStop(0, 'red');
+<input type=button value="createLinearGradient(100, 300, 200, 200)" onclick="{
+   let myGradient = myContext.createLinearGradient(100, 300, 200, 200);
+   myGradient.addColorStop(0, 'white');
    myGradient.addColorStop(0.5, 'blue');
-   myGradient.addColorStop(1, 'yellow');
+   myGradient.addColorStop(1, 'black');
    myContext.fillStyle = myGradient;
-   myContext.fillRect(100, 300, 200, 400);
+   myContext.fillRect(100, 300, 200, 200);
    // reset fillstyle
    myContext.fillStyle = 'black';
 }"><br><br>
