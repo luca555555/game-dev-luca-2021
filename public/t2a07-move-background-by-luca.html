@@ -1,4 +1,4 @@
-<h4>version 0.1.2</h4>
+<h4>version 0.1.3</h4>
 
 <h2 align=center>t2a07-move-background-by-luca.html</h2>
 
@@ -46,12 +46,22 @@
 <h3>Image</h3>
    
 <input type=button value="Image left" onclick="{
-  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 'px' + 10
+  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + -10 + 'px'
 }">
 
 <input type=button value="Image right" onclick="{
   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
-}"><br><br>
+}">
+   
+<input type=button value="Image up" onclick="{
+  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+}">
+   
+<input type=button value="Image down" onclick="{
+  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + -10 + 'px'
+}">
+   
+<br><br>
 
 <img id="myImage01" style="position:relative; width:100px; height:80px; top:0px; left:0px;" src="https://th.bing.com/th/id/OIP.YhIX_JjpD1n65ZPSbt2j2wHaFj?w=239&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;pid=1.7.jpg">
 
