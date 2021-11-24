@@ -12,6 +12,18 @@
 <body onunload="{
    localstorage.setItem('myStoredText',document.getElementById('myText1').value)
 }">   
+   
+   
+<body onload="{
+   myStorage = localStorage.getItem('myStoredFile')
+   if(myStorage  != null){
+      document.getElementById('myFile01').value = myStorage 
+    }
+}">
+
+<body onunload="{
+   localstorage.setItem('myStoredText',document.getElementById('myFile01').value)
+}">   
 
 <h3>Text</h3>
    
@@ -25,4 +37,17 @@
 
 <input type="button" value="Retrieve Text" onClick="{
    document.getElementById('myText1').value = localStorage.getItem('myStoredText')
+}"> 
+
+   
+<input id=myFile01 type=file value=here>
+   
+<input type="button" value="Store File" onClick="{
+   localStorage.setItem('myStoredFile', document.getElementById('myFile01').value)
+   alert(document.getElementById('myFile01').value + ' \nHas been stored')
+   document.getElementById('myFile01').value = ''
+}">
+   
+<input type="button" value="Retrieve File" onClick="{
+   document.getElementById('myFile01').value = localStorage.getItem('myStoredFile')
 }"> 
