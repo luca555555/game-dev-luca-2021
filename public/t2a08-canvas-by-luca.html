@@ -1,26 +1,14 @@
-<h4>version 0.0.5.1 </h4>
-
 <h2 align=center>t2a08-canvas-by-luca.html</h2>
 
-<input type=text id="myText01" value="(1000,600)">
-
-<input type=button value="trst" onclick="{
-					      document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
-					      }">
-
-<div id=myDiv01>...</div>
-
-<br>
-
-<input type=button value="lineTo(30,200)" onclick="{
+<input type=button value=".lineTo(30,200)" onclick="{
    myContext.beginPath();
-   myContext.lineWidth = 1;  
-   myContext.moveTo(0,0);
-   myContext.lineTo('myDiv01').value;
+   myContext.lineWidth = 1;   
+   myContext.moveTo(20,10);
+   myContext.lineTo(30,200);
    myContext.stroke();
 }">
 
-<input type=button value="arc(95, 50, 40, 0, 2 * Math.PI)" onclick="{
+<input type=button value=".arc(95, 50, 40, 0, 2 * Math.PI)" onclick="{
    myContext.beginPath();
    myContext.lineWidth = 10;
    myContext.strokeStyle = 'green';
@@ -28,7 +16,7 @@
    myContext.stroke();
 }">
 
-<input type=button value="fillText('Hello World', 400, 100)" onclick="{
+<input type=button value=".fillText('Hello World', 400, 100)" onclick="{
    myContext.font = '20px Arial';
    myContext.fillText('Hello World', 400, 100);
    myContext.translate(400, 100);  
@@ -39,7 +27,7 @@
    //myContext.rotate(-60 * Math.PI / 180); 
 }">
 
-<input type=button value="quadraticCurveTo(100,220,240,110)" onclick="{
+<input type=button value=".quadraticCurveTo(100,220,240,110)" onclick="{
    myContext.beginPath();
    myContext.moveTo(300,100);
    myContext.quadraticCurveTo(100,220,240,110);
@@ -48,13 +36,13 @@
 
 
 
-<input type=button value="createLinearGradient(0, 0, 1000, 600)" onclick="{
-   let myGradient = myContext.createLinearGradient(0, 0, 1000, 600);
-   myGradient.addColorStop(0, 'white');
+<input type=button value="createLinearGradient" onclick="{
+   let myGradient = myContext.createLinearGradient(1000, 600, 1000, 600);
+   myGradient.addColorStop(0, 'red');
    myGradient.addColorStop(0.5, 'blue');
-   myGradient.addColorStop(1, 'black');
+   myGradient.addColorStop(1, 'yellow');
    myContext.fillStyle = myGradient;
-   myContext.fillRect(0, 0, 1000, 600);
+   myContext.fillRect(1000, 600, 1000, 600);
    // reset fillstyle
    myContext.fillStyle = 'black';
 }"><br><br>
