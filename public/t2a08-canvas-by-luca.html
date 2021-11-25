@@ -36,11 +36,11 @@
 
 
 
-<input type=button value=".createLinearGradient(100, 300, 200, 400)" onclick="{
+<input type=button value="createLinearGradient" onclick="{
    let myGradient = myContext.createLinearGradient(100, 300, 200, 400);
-   myGradient.addColorStop(0, 'red');
+   myGradient.addColorStop(0, 'white');
    myGradient.addColorStop(0.5, 'blue');
-   myGradient.addColorStop(1, 'yellow');
+   myGradient.addColorStop(1, 'black');
    myContext.fillStyle = myGradient;
    myContext.fillRect(100, 300, 200, 400);
    // reset fillstyle
