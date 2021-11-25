@@ -52,6 +52,12 @@
 <input type=button value="test v1" onclick="{
    myContext.beginPath();
    myContext.lineWidth = 1;   
+   myContext.moveTo(100,200);
+   myContext.lineTo(100,300);
+   myContext.stroke();
+}
+   myContext.beginPath();
+   myContext.lineWidth = 1;   
    myContext.moveTo(0,0);
    myContext.lineTo(1000,600);
    myContext.stroke();
