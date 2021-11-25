@@ -49,6 +49,15 @@
    myContext.fillStyle = 'black';
 }"><br><br>
 
+<input type=button value="test v1" onclick="{
+   myContext.beginPath();
+   myContext.lineWidth = 1;   
+   myContext.moveTo(0,0);
+   myContext.lineTo(1000,600);
+   myContext.stroke();
+}">
+
+<br><br>
 <input type=button value="clearRect(250, 150, 300, 300)" onclick="{
    myContext.clearRect(250, 150, 300, 300);
 }">
