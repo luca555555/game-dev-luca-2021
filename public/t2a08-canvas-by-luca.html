@@ -37,13 +37,13 @@
 
 
 <input type=button value="createLinearGradient" onclick="{
-   let myGradient = myContext.createLinearGradient(1000, 600, 1000, 600);
+   let myGradient = myContext.createLinearGradient(1000, 600, 0, 0);
    myGradient.addColorStop(0, 'red');
    myGradient.addColorStop(0.5, 'blue');
    myGradient.addColorStop(1, 'yellow');
    myContext.fillStyle = myGradient;
-   myContext.fillRect(1000, 600, 1000, 600);
-   // reset fillstyle
+   myContext.fillRect(1000, 600, 0, 0);
+   reset fillstyle
    myContext.fillStyle = 'black';
 }"><br><br>
 
