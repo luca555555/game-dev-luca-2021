@@ -42,14 +42,6 @@
    
    
    <br><br>
-   
-   
-   <input type=text id=myText01 value="snap">
-
-<input type=button value="changeplz" onclick="{
-					      document.getElementById('mydiv01').innerHTML = document.getElementById('myText01').value
-					      }"><br>
-<div id=mydiv01>...</div>
 
    
    <body onload="{
@@ -75,10 +67,6 @@
    localstorage.setItem('myStoredText2',document.getElementById('myFile02').value)
 }">   
 
-<h3>Text</h3>
-   
-<input id="myText01" type=text size=50 value="" placeholder="Write here to store"><br><br>
-
 <input type="button" value="Store Text" onClick="{
    localStorage.setItem('myStoredText2', document.getElementById('myText01').value)
    alert(document.getElementById('myText01').value + ' \nHas been stored')
@@ -90,4 +78,9 @@
 }">
    
    
-   
+<input type=text id=myText01 value="snap">
+
+<input type=button value="changeplz" onclick="{
+					      document.getElementById('mydiv01').innerHTML = document.getElementById('myText01').value
+					      }"><br>
+<div id=mydiv01>...</div>
