@@ -38,23 +38,56 @@
 <input type="button" value="Retrieve Text" onClick="{
    document.getElementById('myText1').value = localStorage.getItem('myStoredText')
 }"> 
+   
+   
+   
+   <br><br>
+   
+   
+   <input type=text id=myText01 value="snap">
 
-<br><br>
+<input type=button value="changeplz" onclick="{
+					      document.getElementById('mydiv01').innerHTML = document.getElementById('myText01').value
+					      }"><br>
+<div id=mydiv01>...</div>
+
    
-   <input type=hidden value=cant grab value of file>
+   <body onload="{
+   myStorage = localStorage.getItem('myStoredText2')
+   if(myStorage  != null){
+      document.getElementById('myText01').value = myStorage 
+    }
+}">
+
+<body onunload="{
+   localstorage.setItem('myStoredText2',document.getElementById('myText01').value)
+}">   
    
-<h3>place</h3>
    
-<input id=myFile01 type=file value=here>
+<body onload="{
+   myStorage = localStorage.getItem('myStoredFile2')
+   if(myStorage2  != null){
+      document.getElementById('myFile02').value = myStorage2
+    }
+}">
+
+<body onunload="{
+   localstorage.setItem('myStoredText2',document.getElementById('myFile02').value)
+}">   
+
+<h3>Text</h3>
    
-<br>
-   
-<input type="button" value="Store File" onClick="{
-   localStorage.setItem('myStoredFile', document.getElementById('myFile01').value)
-   alert(document.getElementById('myFile01').value + ' \nHas been stored')
-   document.getElementById('myFile01').value = ''
+<input id="myText01" type=text size=50 value="" placeholder="Write here to store"><br><br>
+
+<input type="button" value="Store Text" onClick="{
+   localStorage.setItem('myStoredText2', document.getElementById('myText01').value)
+   alert(document.getElementById('myText01').value + ' \nHas been stored')
+   document.getElementById('myText01').value = ''
+}">
+
+<input type="button" value="Retrieve Text" onClick="{
+   document.getElementById('myText01').value = localStorage.getItem('myStoredText2')
 }">
    
-<input type="button" value="Retrieve File" onClick="{
-   document.getElementById('myFile01').value = localStorage.getItem('myStoredFile')
-}"> 
+   
+   
