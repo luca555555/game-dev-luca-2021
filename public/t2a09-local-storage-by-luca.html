@@ -1,4 +1,4 @@
-<h4>version 0.0.2 </h4>
+<h4>version 0.0.3 </h4>
 
 <h2 align=center>t2a09-local-storage-by-luca.html</h2>
 
@@ -49,16 +49,23 @@ body {
    
    <br><br>
 
+	<h5>title</h5>
+	
+<input type=text id=myText01 value="snap">
+
+<input type=button value="changeplz" onclick="{
+					      document.getElementById('mydiv01').innerHTML = document.getElementById('myText01').value
+					      }"><br>
    
    <body onload="{
    myStorage = localStorage.getItem('myStoredText2')
    if(myStorage  != null){
-      document.getElementById('myText01').value = myStorage 
+      document.getElementById('mydiv01').value = myStorage 
     }
 }">
 
 <body onunload="{
-   localstorage.setItem('myStoredText2',document.getElementById('myText01').value)
+   localstorage.setItem('myStoredText2',document.getElementById('mydiv01').value)
 }">   
    
    
@@ -74,19 +81,15 @@ body {
 }">   
 
 <input type="button" value="Store Text" onClick="{
-   localStorage.setItem('myStoredText2', document.getElementById('myText01').value)
-   alert(document.getElementById('myText01').value + ' \nHas been stored')
-   document.getElementById('myText01').value = ''
+   localStorage.setItem('myStoredText2', document.getElementById('mydiv01').value)
+   alert(document.getElementById('mydiv01').value + ' \nHas been stored')
+   document.getElementById('mydiv01').value = ''
 }">
 
 <input type="button" value="Retrieve Text" onClick="{
-   document.getElementById('myText01').value = localStorage.getItem('myStoredText2')
+   document.getElementById('mydiv01').value = localStorage.getItem('myStoredText2')
 }">
    
    
-<input type=text id=myText01 value="snap">
 
-<input type=button value="changeplz" onclick="{
-					      document.getElementById('mydiv01').innerHTML = document.getElementById('myText01').value
-					      }"><br>
 <div id=mydiv01>...</div>
