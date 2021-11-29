@@ -44,26 +44,26 @@
   
   
 <body onload="{
-   myStorage = localStorage.getItem('myStoredText')
+   myStorage = localStorage.getItem('myStoredText02')
    if(myStorage  != null){
       document.getElementById('myText2').value = myStorage 
     }
 }">
 
 <body onunload="{
-   localstorage.setItem('myStoredText',document.getElementById('myText2').value)
+   localstorage.setItem('myStoredText02',document.getElementById('myText2').value)
 }">   
    
    
 <body onload="{
-   myStorage = localStorage.getItem('myStoredFile')
+   myStorage = localStorage.getItem('myStoredFile02')
    if(myStorage  != null){
       document.getElementById('myFile02').value = myStorage 
     }
 }">
 
 <body onunload="{
-   localstorage.setItem('myStoredText',document.getElementById('myFile02').value)
+   localstorage.setItem('myStoredText02',document.getElementById('myFile02').value)
 }">   
 
 <h3>Text</h3>
@@ -71,11 +71,11 @@
 <input id="myText2" type=text size=50 value="" placeholder="Write here to store"><br><br>
 
 <input type="button" value="Store Text" onClick="{
-   localStorage.setItem('myStoredText', document.getElementById('myText2').value)
+   localStorage.setItem('myStoredText02', document.getElementById('myText2').value)
    alert(document.getElementById('myText2').value + ' \nHas been stored')
    document.getElementById('myText2').value = ''
 }">
 
 <input type="button" value="Retrieve Text" onClick="{
-   document.getElementById('myText2').value = localStorage.getItem('myStoredText')
+   document.getElementById('myText2').value = localStorage.getItem('myStoredText02')
 }"> 
