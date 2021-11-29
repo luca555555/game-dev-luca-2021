@@ -25,7 +25,7 @@
    localstorage.setItem('myStoredText',document.getElementById('myFile01').value)
 }">   
 
-<h3>Text</h3>
+<h3>store something</h3>
    
 <input id="myText1" type=text size=50 value="" placeholder="Write here to store"><br><br>
 
@@ -46,7 +46,7 @@
 <body onload="{
    myStorage = localStorage.getItem('myStoredText02')
    if(myStorage  != null){
-      document.getElementById('myText2').value = myStorage02 
+      document.getElementById('myText2').value = myStorage 
     }
 }">
 
@@ -56,9 +56,9 @@
    
    
 <body onload="{
-   myStorage02 = localStorage.getItem('myStoredFile02')
-   if(myStorage02  != null){
-      document.getElementById('myFile02').value = myStorage02 
+   myStorage = localStorage.getItem('myStoredFile02')
+   if(myStorage  != null){
+      document.getElementById('myFile02').value = myStorage 
     }
 }">
 
@@ -66,7 +66,7 @@
    localstorage.setItem('myStoredText02',document.getElementById('myFile02').value)
 }">   
 
-<h3>Text</h3>
+<h3>store somehting else</h3>
    
 <input id="myText2" type=text size=50 value="" placeholder="Write here to store"><br><br>
 
