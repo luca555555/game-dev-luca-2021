@@ -1,4 +1,4 @@
-<h4>version 0.0.5</h4>
+<h4>version 0.0.6</h4>
 
 <h2 align=center>t2a09-local-storage-by-luca.html</h2>
 
@@ -72,12 +72,12 @@ body {
 <body onload="{
    myStorage = localStorage.getItem('myStoredFile')
    if(myStorage2  != null){
-      document.getElementById('myFile02').value = myStorage2
+      document.getElementById('myFile02').value = myStorage
     }
 }">
 
 <body onunload="{
-   localstorage.setItem('myStoredText',document.getElementById('myFile02').value)
+   localstorage.setItem('myStoredText',document.getElementById('myFile01').value)
 }">   
 
 <input type="button" value="Store Text" onClick="{
