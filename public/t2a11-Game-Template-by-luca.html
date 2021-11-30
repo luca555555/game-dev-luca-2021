@@ -64,15 +64,10 @@ function myCheckHit(){
    
 <input type=button value="Move left"="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + -10 + 'px'
-  myCheckHit()     // why are we still here
+  myCheckHit()     //
 }">
    
-<input type=button value="Move down"="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
-  myCheckHit()     // just to suffer
-}">
-   
-<input type=button value="Image downz" onclick="{
-  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
-  myCheckHit()
+<input type=button value="Movez"="{this.click(); event.preventDefault();}" onclick="{
+  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 50 + 'px'
+  myCheckHit()     //
 }">
