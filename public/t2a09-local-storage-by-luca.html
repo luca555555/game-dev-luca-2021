@@ -79,3 +79,44 @@
 <input type="button" value="Retrieve Text" onClick="{
    document.getElementById('myText2').value = localStorage.getItem('myStoredText02')
 }"> 
+   
+   <br><br>
+  
+  
+<body onload="{
+   myStorage01 = localStorage.getItem('myStoredText02')
+   if(myStorage01  != null){
+      document.getElementById('myText2').value = myStorage01 
+    }
+}">
+
+<body onunload="{
+   localstorage.setItem('myStoredText02',document.getElementById('myText2').value)
+}">   
+   
+   
+<body onload="{
+   myStorage01 = localStorage.getItem('myStoredFile02')
+   if(myStorage01  != null){
+      document.getElementById('myFile02').value = myStorage01 
+    }
+}">
+
+<body onunload="{
+   localstorage.setItem('myStoredText02',document.getElementById('myFile02').value)
+}">   
+
+<div h3 id="st03">store a div</div h3>
+   
+<input id="myText2" type=text size=50 value="" placeholder="Write here to store"><br><br>
+
+<input type="button" value="Store Text" onClick="{
+   localStorage.setItem('myStoredText02', document.getElementById('myText2').value)
+   document.getElementById('st02').innerHTML = (document.getElementById('myText2').value + ' \nHas been stored')
+   document.getElementById('myText2').value = ''
+}">
+
+<input type="button" value="Retrieve Text" onClick="{
+   document.getElementById('myText2').value = localStorage.getItem('myStoredText02')
+}"> 
+   
