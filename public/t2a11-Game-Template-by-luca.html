@@ -67,12 +67,12 @@ function myCheckHit(){
   myCheckHit()     // why are we still here
 }">
    
-   <input type=button value="Move down"="{this.click(); event.preventDefault();}" onclick="{
+<input type=button value="Move down"="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
   myCheckHit()     // just to suffer
 }">
    
-   <input type=button value="Move up"="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.top) + -10 + 'px'
-  myCheckHit()     // ._.
+<input type=button value="Image down" onclick="{
+  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+  myCheckHit()
 }">
