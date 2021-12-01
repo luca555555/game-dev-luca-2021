@@ -38,6 +38,9 @@ function myCheckHit(){
    }
 
    
+   //image 3 wont colide with image 1
+   //I think the problem is it dosent know my3 in suposed to be myImg03 idk how to fix that
+   
    function myHitOther(my1,my3){
    left1   = parseInt(document.getElementById(my1).style.left)
    right1  = left1 + parseInt(document.getElementById(my1).style.width)
@@ -56,10 +59,9 @@ function myCheckHit(){
 }
 
 
-function myCheckHit(){
+function myCheckHit2(){
    if ( myHitOther('myImg01','myImg03') ){
-       alert('you lose')
-      //document.getElementById('myImg01').style.left = '20px'
+       alert('you win')
    }
 }
    
@@ -88,7 +90,8 @@ function myCheckHit(){
 
 <input type=button value="Move right"="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
-  myCheckHit()     // why
+  myCheckHit()   
+  myCheckHit2()// why
 }">
    
 <input type=button value="Move left"="{this.click(); event.preventDefault();}" onclick="{
