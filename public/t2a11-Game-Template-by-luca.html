@@ -59,7 +59,7 @@ function myCheckHit(){
 }
 
 
-function myCheckHit2(){
+function myCheckHit(){
    if ( myHitOther('myImg01','myImg03') ){
        alert('you win')
    }
@@ -90,8 +90,7 @@ function myCheckHit2(){
 
 <input type=button value="Move right"="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
-  myCheckHit()   
-  myCheckHit2()// why
+  myCheckHit()// why
 }">
    
 <input type=button value="Move left"="{this.click(); event.preventDefault();}" onclick="{
