@@ -58,7 +58,7 @@ function myCheckHit(){
 }">
 
 
-<input type=button value="Move right"="{this.click(); event.preventDefault();}" onclick="{
+<input type=button value="Move right"="{this.click(); event.preventDefault();}" onKeyDown="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
   myCheckHit()     // why
 }">
