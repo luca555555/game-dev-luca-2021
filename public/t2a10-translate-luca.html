@@ -15,16 +15,16 @@
     }
 </script>
 
+<input type=button value="Change frase" onclick="{
+					      document.getElementById('google_translate_element').innerHTML = document.getElementById('myText01').value
+					      }">
+	
 <input type=text id="myText01" value="pog">
 
 <div id="google_translate_element">this is the thing said</div>
 
-<input type=button value="Change frase" onclick="{
-					      document.getElementById('google_translate_element').innerHTML = document.getElementById('myText01').value
-					      }">
 
-
-<input  type="button" value="initilize speak" onclick="{  
+<input  type="button" value="speek:UK English Female" onclick="{  
    let myVoice = 'UK English Female'
    responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
 }"><br><br>
