@@ -39,19 +39,19 @@ function myCheckHit(){
 
    
    
-   function myHitOther(my1,myImg03){
+   function myHitOther(my1,my3){
    left1   = parseInt(document.getElementById(my1).style.left)
    right1  = left1 + parseInt(document.getElementById(my1).style.width)
    top1    = parseInt(document.getElementById(my1).style.top)   
    bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
-   leftmyImg03   = parseInt(document.getElementById(myImg03).style.left)
-   rightmyImg03  = leftmyImg03 + parseInt(document.getElementById(myImg03).style.width)
-   topmyImg03    = parseInt(document.getElementById(myImg03).style.top)   
-   bottommyImg03 = topmyImg03   + parseInt(document.getElementById(myImg03).style.height)
-   if ((right1  >=  leftmyImg03 ) &&      	   
-       (bottom1 >=  topmyImg03   ) &&
-       (left1   <=  rightmyImg03 ) &&
-       (top1    <=  bottommyImg03) ){
+   left3   = parseInt(document.getElementById(my3).style.left)
+   right3  = left3 + parseInt(document.getElementById(my3).style.width)
+   top3    = parseInt(document.getElementById(my3).style.top)   
+   bottom3 = top3   + parseInt(document.getElementById(my3).style.height)
+   if ((right1  >=  left3 ) &&      	   
+       (bottom1 >=  top3   ) &&
+       (left1   <=  right3 ) &&
+       (top1    <=  bottom3) ){
        return true
    }
 }
