@@ -232,11 +232,7 @@ function myCheckHit(){
 }">
 
    
-<imput type=hidden value="f*ck google for not letting me play this onload (yes I know its bad music go away)">
-   
-   <input type=button value="music" onclick="{
-              mySound1.play()
-              }"><br>
+
    
 <input type=button value="Move left"="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + -10 + 'px'
@@ -258,3 +254,9 @@ function myCheckHit(){
   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
   myCheckHit()     //break
 }">
+   
+   <imput type=hidden value="f*ck google for not letting me play this onload (yes I know its bad music go away)">
+   
+   <input type=button value="(bad)Music" onclick="{
+              mySound1.play()
+              }">
