@@ -6,13 +6,13 @@
    </font>
 
 <script>
-
-   // global variables here
+   
+   //this was a lot of copy pasting :/
+   //no alerts though 
    let myGlobalX = 0
    let myClock
 
 
-   // global functions here
 function myHitOther(my1,my2){
    left1   = parseInt(document.getElementById(my1).style.left)
    right1  = left1 + parseInt(document.getElementById(my1).style.width)
@@ -193,13 +193,15 @@ function myCheckHit(){
       document.getElementById('myImg01').style="position: absolute; width: 100px; height: 80px; top: 50px; left: 40px;"
       }
 
-   // more if statements here
+   //thank god that broke so many times!!!!!!!!!!!
 
 }
 
 
 </script>
 
+<imput type=hidden value="probaby the worst way to get img's posible lol">
+       
 <img id="myImg01" style="position: absolute; width: 100px; height: 80px; top: 270px; left: 40px;"  src="https://user-images.githubusercontent.com/91278104/144320001-242b47df-144c-4497-b4db-e7ddc80d2c15.jpeg">
 <img id="myImg02" style="position:absolute; width:1400px; height:80px; top:150px; left:0px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
 <img id="myImg03" style="position:absolute; width:190px; height:170px; top:230px; left:1210px;" src="https://user-images.githubusercontent.com/91278104/144321838-8994649d-b50b-4fc2-bdac-4cdd940de613.png">
@@ -223,22 +225,24 @@ function myCheckHit(){
 }">
 
 
-<input type=button value="Move right"="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
-  myCheckHit()// why
-}">
    
 <input type=button value="Move left"="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + -10 + 'px'
-  myCheckHit()     // is 
+  myCheckHit()     //why
 }">
    
-<input type=button value="Move down"="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
-  myCheckHit()     // this
+<input type=button value="Move right"="{this.click(); event.preventDefault();}" onclick="{
+  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
+  myCheckHit()   //did
 }">
    
 <input type=button value="Move up"="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + -10 + 'px'
-  myCheckHit()     // broken
+  myCheckHit()     //this
+}">
+   
+   
+<input type=button value="Move down"="{this.click(); event.preventDefault();}" onclick="{
+  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
+  myCheckHit()     //break
 }">
