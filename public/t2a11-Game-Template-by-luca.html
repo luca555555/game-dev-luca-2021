@@ -1,7 +1,7 @@
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://user-images.githubusercontent.com/91278104/143130529-ce7cc187-5eba-4ed4-a822-8248b054458d.jpg">
 
 <font color=white>
-   <h4>version 0.1.42 </h4>
+   <h4>version 0.1.43 </h4>
 <h1 align=center>t2a11-Game-Template-by-luca.html</h1>
    </font>
 
@@ -115,6 +115,23 @@ function myHitOther(my1,my2){
        return true
    }
 }
+   
+   function myHitOther(my1,my8){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left8   = parseInt(document.getElementById(my8).style.left)
+   right8  = left8 + parseInt(document.getElementById(my8).style.width)
+   top8    = parseInt(document.getElementById(my8).style.top)   
+   bottom8 = top8   + parseInt(document.getElementById(my8).style.height)
+   if ((right1  >=  left8  ) &&      	   
+       (bottom1 >=  top8   ) &&
+       (left1   <=  right8 ) &&
+       (top1    <=  bottom8) ){
+       return true
+   }
+}
 
 
 function myCheckHit(){
@@ -143,6 +160,11 @@ function myCheckHit(){
       document.getElementById('myImg01').style="position: absolute; width: 100px; height: 80px; top: 270px; left: 40px;"
    }
    
+       if ( myHitOther('myImg01','myImg08') ){
+       alert('you lose')
+      document.getElementById('myImg01').style="position: absolute; width: 100px; height: 80px; top: 270px; left: 40px;"
+   }
+   
       if ( myHitOther('myImg01','myImg03') ){
        alert('you win!!')
       }
@@ -156,12 +178,14 @@ function myCheckHit(){
 
 <img id="myImg01" style="position: absolute; width: 100px; height: 80px; top: 270px; left: 40px;"  src="https://user-images.githubusercontent.com/91278104/144320001-242b47df-144c-4497-b4db-e7ddc80d2c15.jpeg">
 <img id="myImg02" style="position:absolute; width:1400px; height:80px; top:150px; left:0px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
-<img id="myImg03" style="position:absolute; width:100px; height:80px; top:400px; left:1250px;" src="https://user-images.githubusercontent.com/91278104/144321838-8994649d-b50b-4fc2-bdac-4cdd940de613.png">
+<img id="myImg03" style="position:absolute; width:100px; height:80px; top:250px; left:1250px;" src="https://user-images.githubusercontent.com/91278104/144321838-8994649d-b50b-4fc2-bdac-4cdd940de613.png">
 <img id="myImg04" style="position:absolute; width:1400px; height:80px; top:500px; left:0px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
 <img id="myImg05" style="position:absolute; width:100px; height:130px; top:230px; left:200px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
 <img id="myImg06" style="position:absolute; width:300px; height:130px; top:400px; left:470px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
-<img id="myImg07" style="position:absolute; width:100px; height:130px; top:230px; left:550px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
-
+<img id="myImg07" style="position:absolute; width:100px; height:130px; top:230px; left:900px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
+<img id="myImg08" style="position:absolute; width:100px; height:130px; top:400px; left:1100px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
+   
+   
 <body onload="{
   clearInterval(myClock)
   let myTemp = '100px 0px'
