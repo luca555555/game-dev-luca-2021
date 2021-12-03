@@ -1,7 +1,7 @@
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://user-images.githubusercontent.com/91278104/143130529-ce7cc187-5eba-4ed4-a822-8248b054458d.jpg">
 
 <font color=white>
-   <h4>version 0.2.58 </h4>
+   <h4>version 0.2.59 </h4>
 <h1 align=center id="myTitle01">t2a11-Game-Template-by-luca.html</h1>
    </font>
    
@@ -156,6 +156,57 @@ function myHitOther(my1,my2){
        return true
    }
 }
+   
+   function myHitOther(my1,my10){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left10   = parseInt(document.getElementById(my10).style.left)
+   right10  = left10 + parseInt(document.getElementById(my10).style.width)
+   top10    = parseInt(document.getElementById(my10).style.top)   
+   bottom10 = top10   + parseInt(document.getElementById(my10).style.height)
+   if ((right1  >=  left10  ) &&      	   
+       (bottom1 >=  top10   ) &&
+       (left1   <=  right10 ) &&
+       (top1    <=  bottom10) ){
+       return true
+   }
+}
+   
+   function myHitOther(my1,my11){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left11   = parseInt(document.getElementById(my11).style.left)
+   right11  = left11 + parseInt(document.getElementById(my11).style.width)
+   top11    = parseInt(document.getElementById(my11).style.top)   
+   bottom11 = top11   + parseInt(document.getElementById(my11).style.height)
+   if ((right1  >=  left11  ) &&      	   
+       (bottom1 >=  top11   ) &&
+       (left1   <=  right11 ) &&
+       (top1    <=  bottom11) ){
+       return true
+   }
+}
+   
+   function myHitOther(my1,my12){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left12   = parseInt(document.getElementById(my12).style.left)
+   right12  = left12 + parseInt(document.getElementById(my12).style.width)
+   top12    = parseInt(document.getElementById(my12).style.top)   
+   bottom12 = top12   + parseInt(document.getElementById(my12).style.height)
+   if ((right1  >=  left12  ) &&      	   
+       (bottom1 >=  top12   ) &&
+       (left1   <=  right12 ) &&
+       (top1    <=  bottom12) ){
+       return true
+   }
+}
 
 
 function myCheckHit(){
@@ -195,6 +246,24 @@ function myCheckHit(){
       
    }
    
+          if ( myHitOther('myImg01','myImg010') ){
+         document.getElementById('myTitle01').innerHTML = "txt"
+         document.getElementById('myImg01').style.top = '-20px'
+      
+   }
+   
+          if ( myHitOther('myImg01','myImg011') ){
+         document.getElementById('myTitle01').innerHTML = "txt"
+         document.getElementById('myImg01').style.top = '-20px'
+      
+   }
+   
+         if ( myHitOther('myImg01','myImg012') ){
+         document.getElementById('myTitle01').innerHTML = "txt"
+         document.getElementById('myImg01').style.top = '-20px'
+      
+   }
+   
       if ( myHitOther('myImg01','myImg03') ){
       document.getElementById('myTitle01').innerHTML = "YOU WIN!! (GG)"
       document.getElementById('myImg01').style="position: absolute; width: 100px; height: 80px; top: 50px; left: 40px;"
@@ -220,6 +289,9 @@ function myCheckHit(){
 <img id="myImg07" style="position:absolute; width:100px; height:130px; top:230px; left:900px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
 <img id="myImg08" style="position:absolute; width:250px; height:130px; top:400px; left:1150px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
 <img id="myImg09" style="position:absolute; width:1400px; height:10px; top:140px; left:0px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
+<img id="myImg010" style="position:absolute; width:100px; height:10px; top:700px; left:0px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
+<img id="myImg011" style="position:absolute; width:100px; height:10px; top:700px; left:100px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
+<img id="myImg012" style="position:absolute; width:100px; height:10px; top:700px; left:200px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
    
    
 <body onload="{
