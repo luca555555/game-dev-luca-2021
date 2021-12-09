@@ -1,15 +1,31 @@
-nothing
+<script>
+   let myInterval
+ 
+function myIsOnScreen(){
+   if (parseInt(document.getElementById('myDiv01').style.left) > 400) {
+     document.getElementById('myDiv01').style.left = '397px'
+   }
+}
 
-<input type=hidden value="" onclick="{
-  let myTemp = 0
-  for ( let myLoop = 0;   myLoop < (myMax-1);  myLoop++){
-     if (myCards[myLoop] > myCards[myLoop+1]){
-                                         myTemp = myCards[myLoop+1]
-                                         myCards[myLoop+1] = myCards[myLoop]
-                                         myCards[myLoop] = myTemp
-                                         }
-                                         }
+</script>
+
+<body onkeydown="{
+     let myKey = event.key
+ //  let myKey = String.toLowerCase(event.key)
+   if (myKey == 'd') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+   
+         document.getElementById('myDiv01').style.left = 
+             parseInt(document.getElementById('myDiv01').style.left) + 3
+         myIsOnScreen()
+      } ,20)
+   }
 }">
 
+<h1 align=center>ssssss</h1>
+Get WASD working, what about a second object controlled by arrows or IJKL<br>
 
-<script> let mySound1 = new Audio('https://user-images.githubusercontent.com/91278104/144552774-bef8cf92-7b9a-4ddc-a8db-940d264229d2.mp4') </script>
+<div id="myDiv01" style="position:absolute; left:200; top:200; " >Fred</div>
+
+</body>
