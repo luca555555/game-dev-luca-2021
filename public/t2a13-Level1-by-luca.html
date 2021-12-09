@@ -71,26 +71,3 @@ function myCheckHit(){
   }, 100)
     
 }">
-   
-   
-<body onkeydown="{
-     let myKey = event.key
-   if (myKey == 'd') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-   
-         document.getElementById('myImg01').style.left = 
-             parseInt(document.getElementById('myImg01').style.left) + 3
-         myIsOnScreen()
-      } ,20)
-   }
-}">
-   
-   <body onkeyup="{
-     let myKey = event.key
-   if (myKey == 'd') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-      }
-   }
-}">
