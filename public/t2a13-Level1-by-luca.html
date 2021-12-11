@@ -3,7 +3,7 @@
  
 function myIsOnScreen(){
    if (parseInt(document.getElementById('myDiv01').style.left) > 100000) {
-     document.getElementById('myDiv01').style.left = '397px'
+     document.getElementById('myDiv01').style.left = '0px'
    }
 }
 
@@ -12,7 +12,6 @@ function myIsOnScreen(){
 <body onkeydown="{
 
      let myKey = event.key
- //  let myKey = String.toLowerCase(event.key)
 
    if (myKey == 'd') {
       clearInterval(myInterval)
@@ -23,9 +22,18 @@ function myIsOnScreen(){
          myIsOnScreen()
       } ,20)
    }
-
 }">
 
+   
+<body onkeyup="{
+
+     let myKeyZ = event.keyZ
+
+   if (myKeyZ == 'd') {
+      clearInterval(myInterval)
+   }
+}">
+   
 <div id="myDiv01" style="position:absolute; left:200; top:200; " >Fred</div>
 
 </body>
