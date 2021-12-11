@@ -1,39 +1,9 @@
+
+
 <script>
-   let myInterval
- 
-function myIsOnScreen(){
-   if (parseInt(document.getElementById('myDiv01').style.left) > 100000) {
-     document.getElementById('myDiv01').style.left = '0px'
-   }
-}
-
+document.addEventListener("keypress", function(event) {
+    if (event.keyCode == 13) {
+        alert('Enter pressed.')
+    }
+})
 </script>
-
-<body onkeydown="{
-
-     let myKey = event.key
-
-   if (myKey == 'd') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-   
-         document.getElementById('myDiv01').style.left = 
-             parseInt(document.getElementById('myDiv01').style.left) + 3
-         myIsOnScreen()
-      } ,20)
-   }
-}">
-
-   
-<body onkeyup="{
-
-     let myKeyZ = event.keyZ
-
-   if (myKeyZ == 'd') {
-      clearInterval(myInterval)
-   }
-}">
-   
-<div id="myDiv01" style="position:absolute; left:200; top:200; " >Fred</div>
-
-</body>
