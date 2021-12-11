@@ -21,8 +21,9 @@ function myIsOnScreen(){
              parseInt(document.getElementById('myDiv01').style.left) + 3
          myIsOnScreen()
       } ,20)
-   }
-
+   } else 
+                 clearInterval(myInterval)
+                 
 }">
 
 <div id="myDiv01" style="position:absolute; left:200; top:200; " >Fred</div>
