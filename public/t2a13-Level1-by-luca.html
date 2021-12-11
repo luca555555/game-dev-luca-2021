@@ -1,8 +1,30 @@
-<html>
-<script src= "https://api.particle.io/v1/devices/DEVICEID/direction?access_token=ACCESSTOKEN" ></script>
 <script>
-document.addEventListener("KeyApress", function(event){
-       if(event.keyCode == 65) {
-              alert('a pressed.')
-           </script>
-</html>
+   let myInterval
+ 
+function myIsOnScreen(){
+   if (parseInt(document.getElementById('myDiv01').style.left) > 10000) {
+     document.getElementById('myDiv01').style.left = '0px'
+   }
+}
+</script>
+
+
+<body onkeydown="{
+
+     let myKey = event.key
+
+   if (myKey == 'd') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+   
+         document.getElementById('myDiv01').style.left = 
+             parseInt(document.getElementById('myDiv01').style.left) + 3
+         myIsOnScreen()
+      } ,20)
+   }
+
+}">
+
+<div id="myDiv01" style="position:absolute; left:200; top:200; " >Fred</div>
+
+</body>
