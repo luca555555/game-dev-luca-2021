@@ -28,9 +28,19 @@ function myHitOther(my1,my2){
 
 function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
-       document.getElementById('myImg01').style.left = '5px'
-       //location = 't2a13-keydown.html'  --rederect to another page--
+       document.getElementById('myImg01').style.left = '0px'
    }
+   
+   
+      if ( myHitOther('myImg01','myImg04') ){
+       document.getElementById('myImg01').style.left = '0px'
+   }
+   
+   
+      if ( myHitOther('myImg01','myImg05') ){
+       document.getElementById('myImg01').style.left = '0px'
+   }
+   
    
    if ( myHitOther('myImg01','myImg03') ){
        location = 'https://luca555555.github.io/game-dev-luca-2021/public/t2a14-Level2-by-luca.html'
@@ -45,10 +55,13 @@ function myCheckHit(){
 </script>
    
 <img id="myImg01" style="position:absolute; width:100px; height:80px; top:200px; left:100px;"  src="https://user-images.githubusercontent.com/91278104/145694829-caeeadbe-1a4e-42ac-8001-b4d68135bc79.jpeg">
-<img id="myImg02" style="position:absolute; width:100px; height:80px; top:250px; left:0px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg02" style="position:absolute; width:700px; height:80px; top:50px; left:0px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
 <img id="myImg03" style="position:absolute; width:100px; height:80px; top:400px; left:250px;" src="https://user-images.githubusercontent.com/91278104/144321838-8994649d-b50b-4fc2-bdac-4cdd940de613.png">
+<img id="myImg04" style="position:absolute; width:700px; height:80px; top:50px; left:500px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg05" style="position:absolute; width:700px; height:80px; top:50px; left:600px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
 
-
+   
+   
 <input type=button value="Player Right" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
   myCheckHit()
@@ -69,6 +82,4 @@ function myCheckHit(){
   myCheckHit()
 }">
    
-<font color=white>
-<h4>V 0.0.5 </h4>
-</font>
+V 0.0.6
