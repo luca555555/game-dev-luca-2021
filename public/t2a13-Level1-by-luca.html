@@ -100,28 +100,28 @@ function myCheckHit(){
    
    
    
-<input type=button value="Player Right" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+<input type=button id="con1" value="Player Right" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
   myCheckHit()
 }">
    
-<input type=button value="Player Left" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+<input type=button id="con2" value="Player Left" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + -10 + 'px'
   myCheckHit()
 }">
    
-<input type=button value="Player Down" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+<input type=button id="con3" value="Player Down" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
   myCheckHit()
 }">
    
-<input type=button value="Player UP" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+<input type=button id="con4" value="Player UP" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + -10 + 'px'
   myCheckHit()
 }">
    
-V 0.1.22
+V 0.1.23
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <font.color=white>
-<h3 align=center id=dio>...</h3>
+<h3 align=center id=dio> </h3>
    </font>
