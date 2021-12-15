@@ -68,14 +68,13 @@ function myCheckHit(){
        if ( myHitOther('myImg01','myImg011') ){
        document.getElementById('dio').innerHTML = '2nd there'
           document.getElementById('dio').style= "position:absolute; top:80px; left:150px;"
-          documnet.getElementById('myImg012').syle= "position:absolute; width:100px; height:80px; top:830px; left:30px;"
+          document.getElementById('myImg012').opacity = "0.5"
    }
    
    
    if ( myHitOther('myImg01','myImg012') ){
        document.getElementById('dio').innerHTML = 'door open'
           document.getElementById('dio').style= "position:absolute; top:810px; left:150px;"
-      document.getElementById('myImg12').opacity = "0.5"
    }
    
    
@@ -85,6 +84,7 @@ function myCheckHit(){
 
 
    //if stat's here
+   //document.getElementById('myImg012').opacity = "0.5"
    
 }
 
@@ -104,6 +104,7 @@ function myCheckHit(){
 <img id="myImg10" style="position:absolute; width:200px; height:20px; top:1000px; left:720px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
 <img id="myImg11" style="position:absolute; width:200px; height:20px; top:280px; left:700px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
 <img id="myImg12" style="position:absolute; width:200px; height:20px; top:1000px; left:720px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg13" style="position:absolute; width:200px; height:10px; top:600px; left:720px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
    
    
    
@@ -128,7 +129,7 @@ function myCheckHit(){
   myCheckHit()
 }">
    
-V 0.1.30 op
+V 0.1.31
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <font.color=white>
 <h3 align=center id=dio> </h3>
