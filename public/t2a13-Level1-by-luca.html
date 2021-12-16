@@ -1,7 +1,8 @@
-V 0.2.42
+V 0.2.43
 
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://user-images.githubusercontent.com/91278104/145694847-b4a77962-0f69-4792-88fe-1407128f2775.jpeg">
 
+<script> let mySound1 = new Audio('https://user-images.githubusercontent.com/91278104/145695022-4d2d2903-79d7-47a4-b1c6-7066533dadc3.mp4') </script>
    
 <script>
    
@@ -90,18 +91,19 @@ function myCheckHit(){
       document.getElementById('con4').style="position:absolute; left:400px; top:10px;"
          document.getElementById('dio').style= "position:absolute; width:120px; height:100px; top:150px; left:30px;"
          document.getElementById('dio').innerHTML = 'Talk!'
+         mySound1.play()
    }
    
    
        if ( myHitOther('myImg01','myImg011') ){
-       document.getElementById('dio').innerHTML = '2nd there'
+       document.getElementById('dio').innerHTML = 'thank goodness your here angry red blob wont leave me alone go see what it wants'
           document.getElementById('dio').style= "position:absolute; width:100px; height:80px; top:100px; left:150px;"
           document.getElementById('myImg012').style= "position:absolute; width:100px; height:80px; top:830px; left:30px;"
    }
    
    
    if ( myHitOther('myImg01','myImg012') ){
-       document.getElementById('dio').innerHTML = 'door open'
+       document.getElementById('dio').innerHTML = 'hello i need your help getting a magic item i left in another demention if would would be so kind as to grab that fore me ill even open the portal for you'
           document.getElementById('dio').style= "position:absolute; width:100px; height:80px; top:810px; left:150px;"
       document.getElementById('myImg12').style= "position:absolute; width:200px; height:20px; top:1000px; left:500px;"
    }
