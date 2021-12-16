@@ -4,6 +4,8 @@ V 0.2.43
 
 <script> let mySound1 = new Audio('https://user-images.githubusercontent.com/91278104/145695022-4d2d2903-79d7-47a4-b1c6-7066533dadc3.mp4') </script>
    
+<hidden onclick="setTimeout(myFunction, 3000)"></hidden>
+   
 <script>
    
    // global vars
@@ -90,9 +92,16 @@ function myCheckHit(){
       document.getElementById('con3').style="position:absolute; left:300px; top:10px;"
       document.getElementById('con4').style="position:absolute; left:400px; top:10px;"
          document.getElementById('dio').style= "position:absolute; width:120px; height:100px; top:150px; left:30px;"
+         document.getElementById('myImg15').style= "position:absolute; width:120px; height:0px; top:1px; left:30px;"
          document.getElementById('dio').innerHTML = 'Talk!'
-         mySound1.play()
-   }
+         
+       function myFunction() {
+           for (let num = 0; num < 5; num++) {
+            mySound1.play()
+                                             }
+                             } 
+         
+}
    
    
        if ( myHitOther('myImg01','myImg011') ){
