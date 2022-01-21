@@ -2,6 +2,15 @@
 
 <h2 align=center>t1a09-functions-by-luca.html</h2>
 
-<br>
-<br>
-<br>
+<input type="button" value="Click me" onclick="{
+
+function myFun(myVar){
+  document.getElementById('myDiv01').innerHTML = 'The function made this line. ' + myVar + ' was passed to the function <br>'                                                                     
+}                                                                     
+                                                                      
+
+myFun('28')      // This activates the function                                                                
+                                                                      
+}"><br>
+
+<div id='myDiv01'>...</div><br>
