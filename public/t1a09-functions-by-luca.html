@@ -1,16 +1,13 @@
-<h4>version 0.0.3</h4>
+<h4>version 0.0.2</h4>
 
 <h2 align=center>t1a09-functions-by-luca.html</h2>
 
 <input type="button" value="Click me" onclick="{
 
-function myFun(myVar){
-  document.getElementById('myDiv01').innerHTML = 'The function made this line. ' + myVar + ' was passed to the function <br>'                                                                     
-}                                                                     
-                                                                      
+function myThing(myPass){
+  document.getElementById('myDiv01').innerHTML = myPass + ' was passed to the function <br>'
+                                               }
+                                               myThing('THIS')
+                                               }"
 
-myFun('28')      // This activates the function                                                                
-                                                                      
-}"><br>
-
-<div id='myDiv01'>...</div><br>
+<div id='myDiv01'>...</div>
