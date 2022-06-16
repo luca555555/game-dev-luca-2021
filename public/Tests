@@ -1,0 +1,10 @@
+<h2>Stuff</h2>
+
+<button
+onclick=funk()>value</button>
+
+<script>
+function funk(){
+alert("get fukin wrekt m8")
+}
+</script>
